@@ -1,0 +1,20 @@
+# spring
+spring:
+  # profiles
+  profiles:
+    active: local
+# framework
+framework:
+  # swagger
+  swagger:
+    base-package: sampleforgit.sampleforgit.web.controller
+# log
+logging:
+  config: classpath:config/logback-spring.xml
+  level:
+    root: warn
+    sampleforgit.sampleforgit: info
+# mybatis plus
+mybatis-plus:
+  type-aliases-package: sampleforgit.sampleforgit.entity,sampleforgit.sampleforgit.model.*
+  mapper-locations: classpath:mappers/*Mapper.xml
